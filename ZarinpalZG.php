@@ -91,7 +91,7 @@ class ZarinPalZGGateway
     function Pay($trans_id)
     {
         require_once JAWS_PATH . 'include/Jaws/Header.php';
-        Jaws_Header::Location(ZarinPalZG_PAYMENT_URL . $trans_id);
+        Jaws_Header::Location(ZarinPalZG_PAYMENT_URL . $trans_id . '/ZarinGate');
     }
 
     /**
